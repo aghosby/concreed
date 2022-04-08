@@ -1,0 +1,144 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Concreed</title>
+    <link rel="icon" type="image/png" href="assets/img/logo-clr.png">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/fonts.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/responsive.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/fullpage.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script type="text/javascript" src="assets/js/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+
+  </head>
+
+  <body>
+  
+    <div id="main_wrapper">
+
+      <div class="header dark">
+        <div class="hdr clearfix">
+          <div class="brandname">
+            <a href="#">
+              <img class="clr" src="assets/img/logo-clr.png" />
+              <img class="wht" src="assets/img/logo-grey.png" />
+            </a>
+          </div>
+
+          <div class="mini-menu">
+            <ul class="mini-nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About Concreed</a>
+              </li>
+              <li>
+                <a href="services.html">Services</a>
+              </li>
+            </ul>
+
+            <div class="menu-icon" id="changeState">
+              <div class="text">Menu</div>
+              <div class="menu-burger">
+                <div class="burger"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <div class="nav js-anime">
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="#">Invest</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu-ft js-anime">
+            <div class="copyright">© 2022 Concreed Capital. All rights reserved.</div>
+            <div class="email"><a href="mailto:info@concreedcap.com"><i class="fa fa-envelope" aria-hidden="true"></i>info@concreedcap.com</a></div>
+            <div class="phone"><a href="tel:+234 813 661 1422"><i class="fas fa-phone" aria-hidden="true"></i>+234 813 661 1422</a></div>
+            <div class="social">
+              <a href="" class="fab fa-facebook-f"></a>
+              <a href="" class="fab fa-twitter"></a>
+              <a href="" class="fab fa-youtube"></a>
+              <a href="" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="content sub-pages dark">
+        <div class="pg-bkg" style="background-image: url(media/subscribe.png);"></div>
+        <div class="overall">
+          <div class="pg-hld dark">
+            <div class="pg-title">Contact</div>
+            <div class="r-align">
+              <div class="major-cap">We can assist you in the realisation of your ideas and help you to shape them.</div>
+              <div class="sec-det">
+                <p>Get in touch with us! Until the robots finally take over, we will be at the other end of the line for all your enquiries. Our friendly team is on hand to answer any questions you may have about any of our services.</p>
+              </div>
+
+              <div class="cont-wrap">
+                <div class="cont-hld">
+                  <div class="cont-hd">Address</div>
+                  <p>Third Floor, Megamound Building, <br/> 1b Muri Okunola Extension, <br/> Victoria Island, Lagos</p>
+                </div>
+                <div class="cont-hld">
+                  <div class="cont-hd">Email</div>
+                  <p><a href="">info@concreedcap.com</a></p>
+                </div>
+                <div class="cont-hld">
+                  <div class="cont-hd">Phone</div>
+                  <p><a href="tel:+234-(0)-813-6611-422">+234-(0)-813-6611-422</a></p>
+                </div>
+              </div>
+
+              <div id="map"></div>
+
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCINHyvamD8qS4UkEabVgTBYspQAXgYuvM"></script>
+              <script>
+                  var myCenter = new google.maps.LatLng(6.4319527953308295, 3.438983525760253);
+                  function initialize(){
+                      var mapProp = {
+                          center:myCenter,
+                          zoom:15,
+                          mapTypeId:google.maps.MapTypeId.ROADMAP
+                      };
+
+                  var map = new google.maps.Map(document.getElementById("map"),mapProp);
+
+                  var marker = new google.maps.Marker({
+                      position:myCenter,
+                  });
+
+                  marker.setMap(map);
+              }
+              google.maps.event.addDomListener(window, 'load', initialize);
+              </script>
+
+        
+  
+              
+            </div>
+           
+          </div>
+
+        </div>
+        
+      </div>     
+     
+    </div>
+  
+  </body>
+</html>
